@@ -1,0 +1,136 @@
+:root{
+    --vermelho: #E50914;
+    --preta:black;
+}
+       
+              /*margens da pagina como todo*/
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+           
+            /*Corpo do da pagina*/
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+} 
+
+                /* logo e barra de menu*/
+header .container{
+     display: flex;                 /*libera o alinhamento*/
+     flex-direction: row;     /*alinhamento vertical*/
+     align-items: center;
+     margin-left: 10px;
+     position: relative;
+     bottom: 1px;
+     top: 15px;
+     
+    /*logo principal*/
+}
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial black', times;
+    font-size: 24px;
+    position: relative;
+    left: 46px;
+}
+
+/*menu com inicio, series..*/
+
+header nav a{
+    color: #aaa;
+    text-decoration: none;
+    margin-right: 6px;
+    
+}
+a{
+    position:relative;
+    left: 100px;
+}
+
+
+
+/* SUB- MENU*/
+
+.sub-menu{
+    position:absolute;
+    left: 80%;
+    top: 12px;
+    color: #aaa ;
+}
+
+
+
+/*imagem e tela principal*/
+
+.filme-principal  {
+    font-size: 16px;
+    background: linear-gradient(rgb(0,0,0,.50), rgb(0,0,0,.50)100%), url(../imagens/logo-stranger.jpg);
+    
+    position: relative;
+    bottom: 1px;
+    top: 30px;
+    
+    
+    height: 600px;
+    background-size: cover;
+
+    display: flex;    
+    flex-direction: column;    /*colocar em coluna*/
+    justify-content:center;   /*centralizar a coluna*/
+    align-items: flex-start;   /*alinhar para esquerda*/
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+    
+.filme-principal .description{
+    margin-bottom: 40px;
+    margin-left: 25px;
+}
+
+
+.title{
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Arial', sans-serif;
+    margin-top: 12%;
+    margin-left: 25px;
+}
+.botao{
+    border: none;
+    background-color: black;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 12px;
+    font-size: 15px;
+    
+    border-radius: 4px 2px ;
+    padding: 10px 65px ;
+    border: none;
+    margin-left: 15px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+i{
+font-size: 16px;
+margin-right: 8px;
+
+}
+
+/*Carrossel fimes*/
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
