@@ -13,49 +13,49 @@
            
             /*Corpo do da pagina*/
 body{
-    background: var(--preta);
+    background: var(--preta);                    /*Cor do corpo do Site*/
     font-family: 'Times New Roman', Times, serif;
 } 
 
                 /* logo e barra de menu*/
 header .container{
-     display: flex;                 /*libera o alinhamento*/
-     flex-direction: row;     /*alinhamento vertical*/
-     align-items: center;
-     margin-left: 10px;
-     position: relative;
-     bottom: 1px;
-     top: 15px;
+     display: flex;                             /*libera o alinhamento*/
+     flex-direction: row;                       /*alinhamento vertical*/
+     align-items: center;                       /*alinhamento para o centro*/
+     margin-left: 10px;                         /*separa os itens*/
+     position: relative;                        /*Desloca um pouco as imagens*/
+     bottom: 1px;                               /*deslocamento vertical*/
+     top: 15px;                                 /*deslocamento vertical*/
      
     /*logo principal*/
 }
 header .logo{
     color: var(--vermelho);
     font-family: 'Arial black', times;
-    font-size: 24px;
-    position: relative;
-    left: 46px;
+    font-size: 24px;                            /*tamanho da fonte*/
+    position: relative;                         /*Desloca um pouco as imagens*/
+    left: 46px                                  /*Deslocamento horizontal*/
 }
 
 /*menu com inicio, series..*/
 
 header nav a{
-    color: #aaa;
-    text-decoration: none;
-    margin-right: 6px;
+    color: #aaa 
+    text-decoration: none;                      /*Tira a sublinhação*/
+    margin-right: 6px;                          /*separa um pouco os items entre se*/
     
 }
 a{
-    position:relative;
-    left: 100px;
+    position:relative;                          /*Desloca um pouco as imagens*/
+    left: 100px;                                /*Deslocamento horizontal*/
 }
 
 
 
 /* SUB- MENU*/
 
-.sub-menu{
-    position:absolute;
+.sub-menu{ 
+    position:absolute;                          /*União dos itens*/
     left: 80%;
     top: 12px;
     color: #aaa ;
@@ -75,12 +75,12 @@ a{
     
     
     height: 600px;
-    background-size: cover;
+    background-size: cover;                     /*Uma palavra-chave que é o inverso de contain. Ajusta a imagem o mais largamente possível e mantém sua proporção (a imagem não fica esticada). */
 
     display: flex;    
-    flex-direction: column;    /*colocar em coluna*/
-    justify-content:center;   /*centralizar a coluna*/
-    align-items: flex-start;   /*alinhar para esquerda*/
+    flex-direction: column;                     /*colocar em coluna*/
+    justify-content:center;                     /*centralizar a coluna*/
+    align-items: flex-start;                    /*alinhar para esquerda*/
 
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -88,7 +88,7 @@ a{
 }
     
 .filme-principal .description{
-    margin-bottom: 40px;
+    margin-bottom: 40px;       
     margin-left: 25px;
 }
 
@@ -99,6 +99,8 @@ a{
     margin-top: 12%;
     margin-left: 25px;
 }
+
+       /*Botão com funções*/
 .botao{
     border: none;
     background-color: black;
